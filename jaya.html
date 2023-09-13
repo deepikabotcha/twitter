@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Twitter Clone - Final</title>
+    <link rel="stylesheet" href="jaya.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+    />
+ <script src="jaya.js"></script> 
+  </head>
+  <body>
+  
+    <div class="sidebar">
+      <i class="fab fa-twitter"></i>
+      <div class="sidebarOption active">
+        <span class="material-icons"> home </span>
+        <h2 onclick="random()">  Home</h2>
+        
+      </div>
+
+     <div class="sidebarOption">
+       <span  class="material-icons">search</span>
+        <h2 onclick="me()"> Explore</h2>
+
+        <div id="d" class="feed"></div>
+      </div>
+
+      <div class="sidebarOption">
+        <span class="material-icons"> notifications_none </span>
+        <h2 onclick ="you()">Notifications</a></h2>
+      </div>
+
+      <div class="sidebarOption">
+       <span class="material-icons"> mail_outline </span>
+       <h2 onclick="yaha()"> Messages</a></h2>
+      </div>
+
+      <div class="sidebarOption">
+        <span class="material-icons"> bookmark_border </span>
+        <h2 onclick ="math()">Bookmarks</h2>
+      </div>
+
+      <div class="sidebarOption">
+        <span class="material-icons"> list_alt </span>
+        <h2 onclick="oh()">Lists</a></h2>
+      </div>
+
+      <div class="sidebarOption">
+        <span class="material-icons"> perm_identity </span>
+        <h2> <a href="https://twitter.com/deepikabotcha">Profile</a></h2>
+      </div>
+
+      <div class="sidebarOption">
+        <span class="material-icons"> more_horiz </span>
+        <h2> <a href="https://twitter.com/i/circles">More</a></h2>
+      </div>
+      <button id="myBtn" class="sidebar__tweet">Tweet</button>
+      <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <p>
+            <div class="tweetBox">
+              <form>
+                <div class="tweetbox__input">
+                  <img 
+                    src="https://pbs.twimg.com/profile_images/1572211300692033538/n-lxMuIQ_400x400.jpg"
+                    alt="image"> 
+                    <a href="https://twitter.com/deepikabotcha"></a>
+                  
+                  <input type="text" placeholder="What's happening?" />
+                </div>
+                <hr>
+                <button id="tweetBox__tweetButton">Tweet</button>
+              </form>
+              <div class="material-icons">
+                <span id="material-icons">photo </span>
+                <span id="material-icons">GIF</span>
+                <span id="material-icons">poll</span>
+                <span id="material-icons">schedule</span>
+                <span id="material-icons">location</span>
+              </div>
+              </p>
+        </div>
+      </div>
+    </div>
+    </div>
+    <div id="mav" class="feed">
+      
+      <div id="demo"  id="deep"  id="jaya" id="mani" id="mav" id="rani" class="feed__header">
+        <h2>Home</h2>
+      </div>
+      <div class="tweetBox">
+        <form>
+          <div class="tweetbox__input">
+            <img 
+              src="https://pbs.twimg.com/profile_images/1572211300692033538/n-lxMuIQ_400x400.jpg"
+              alt="image"> 
+              <a href="https://twitter.com/deepikabotcha"></a>
+            
+            <input type="text" placeholder="What's happening?" />
+          </div>
+          <hr>
+          <button id="tweetBox__tweetButton">Tweet</button>
+        </form>
+        <div class="material-icons">
+          <input type="file" id="myfile" style="display:none;"
+           <a><button title="media" type="button" onclick="document.getElementById('myfile').click();" class="material-icons"> <span id="material-icons">photo</button></a>
+            
+          
+           <a href="https://giphy.com/categories"><span id="material-icons">GIF</a></span>
+          <span id="material-icons">poll</span>
+          
+          <button  id="myBtn2" class="material-icons"><span id="material-icons">schedule</button>
+
+          <div id="myModal2" class="modal2">
+
+            <!-- Modal content -->
+            <div class="modal-content2">
+              <span class="close2">&times;</span>
+            <p>
+              <form>
+                <fieldset>
+                <legend>date</legend>
+                <label for="fly" >Date</label>
+                <select class="n" id="fly" type="text">
+                  <div class="v">
+                  <option>month</option>
+                  <option>january</option>
+                  <option>feburary</option>
+                  <option> march</option>
+                  <option>april</option>
+                  <option> may</option>
+                  <option>june</option>
+                  <option>july</option>
+                  <option>august</option>
+                  <option>september</option>
+                  <option>november</option>
+                  <option>december</option>
+                  </div>
+                </select>
+                <br>
+              <select id="b" type="text">
+                <div class="d"> 
+                  <option> date</option>  
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                  <option>6</option>
+                  <option>7</option>
+                  <option>8</option>
+                  <option>9</option>
+                  <option>10</option>
+                  <option>11</option>
+
+                </div>
+              </select>
+              <select id="q" type="text">
+                <option>year</option>
+                <option>2000</option>
+                <option>2001</option>
+                <option>2002</option>
+                <option>2003</option>
+                <option>2004</option>
+                <option>2005</option>
+              </select>
+              
+            </fieldset>  
+            </form>
+            </p>
+            </div>
+          
+          </div>
+
+          
+         <span id="material-icons">location</span>
+          </div>
+
+      </div>
+    
+
+    
+      <div class="post">
+        <div class="post__avatar">
+          <a href="https://twitter.com/tarak9999">
+          <img 
+            src="https://assets-in.bmscdn.com/iedb/artist/images/website/poster/large/jr-ntr-15411-19-09-2017-01-52-16.jpg"
+            alt="image" 
+          /></a>
+        
+        </div>
+
+        <div class="post__body">
+          <div class="post__header">
+            <div class="post__headerText">
+              <h3>
+                jr NTR
+                <span class="post__headerSpecial"
+                  ><span class="material-icons post__badge"> verified</span>@tarak9999</span
+                >
+              </h3>
+            </div>
+            <div class="post__headerDescription">
+              <p> cgfgbyvw gewqhyhqwg ghqyh85ut24 t.</p>
+            </div>
+          </div>
+          <img
+            src="data:image/jpeg;base64,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"
+            alt="image"
+          />
+          <div class="post__footer">
+           
+            <button  onclick class="btn"><span class="material-icons"> repeat </span></button>
+            <img src="like.jpeg" class="icon" id="like1" alt="" onClick="likesClick()">
+            <p class="likes"><span id="likesCount">102</span> likes</p>
+            
+            <button  onclick class="btn"><span class="material-icons"> publish </span></button>
+          </div>
+        </div>
+      </div>
+    
+
+    
+      <div class="post">
+        <div class="post__avatar">
+          <a href="https://twitter.com/hegdepooja">
+          <img
+            src="https://www.pinkvilla.com/files/styles/amp_metadata_content_image/public/cannes_2022_pooja_hegde_reveals_losing_her_luggage_other_issues_before_her_red_carpet_debut.jpg"
+            alt="image"
+          /></a>
+        </div>
+
+        <div class="post__body">
+          <div class="post__header">
+            <div class="post__headerText">
+              <h3>
+                pooja Hegde
+                <span class="post__headerSpecial"
+                  ><span class="material-icons post__badge"> verified </span>@hegdepooja</span
+                >
+              </h3>
+            </div>
+            <div class="post__headerDescription">
+              <p> trey rfhg ghruwehg hrw7eurwh.</p>
+            </div>
+          </div>
+          <img
+            src="https://www.focus2move.com/wp-content/uploads/2020/01/Tesla-Roadster-2020-1024-03.jpg"
+            alt=""
+          />
+          <div class="post__footer">
+            <button  onclick class="btn"><span class="material-icons">repeat</span></button>
+            <img src="like.jpeg" class="icon" id="like2" alt="" onClick="likessClick()" >
+            <p class="likess"><span id="likessCount">105</span> likes</p>
+           
+            <button  onclick class="btn"><span class="material-icons"> publish </span></button>
+          </div>
+        </div>
+      </div>
+    
+    
+    <div id="dem" class="feed">
+    <div class="frr">
+      <p id="de">
+        <span class="material-icons f__searchIcon"> search </span>
+        <input type="text" placeholder="search"></p>
+        <br>
+        <div class="j">
+          <div id="d">
+          <li></li>
+          <li> For you</li>
+          <li>Trending</li>
+         <li> News</li>
+         <li>Sports</li>
+         <li> COVID-19</li>
+
+        </div>
+        <br>
+        <img src="https://media.istockphoto.com/photos/visakhapatnam-picture-id1073216888?k=20&m=1073216888&s=612x612&w=0&h=wkQO2_G0UqaOHs6ZCTShJi7x22ePgkhriO3PW0Jy8IY=">
+        <br>
+        <br>
+        <br>
+        <img src="https://media.istockphoto.com/photos/wild-grass-in-the-mountains-at-sunset-picture-id1322277517?k=20&m=1322277517&s=612x612&w=0&h=ZdxT3aGDGLsOAn3mILBS6FD7ARonKRHe_EKKa-V-Hws=">
+        
+      
+        </div>
+      </div>
+    </div>
+    <div id="deep" class="feed">
+      <div class="noti">
+        <h1> Notifications</h1>
+        <hr>
+        <p> Deepika</p>
+        <br>
+        <p> Jaya Rani</p>
+      </div>
+    </div>
+    <div id="jaya" class="feed">
+      <div class="book">
+    <h1> Book Marks</h1>
+    <img src="https://abs.twimg.com/sticky/illustrations/empty-states/book-in-bird-cage-400x200.v1.png">
+    <p><b> save tweets for later</b></p>
+    <p>Don’t let the good ones fly away! Bookmark Tweets to easily find them again in the future.</p>
+    </div>
+    </div>
+    <div id="mani" class="feed">
+      <div class="message">
+        <h3> messages</h3>
+        <br>
+        <br>
+        <p> <b>Welcome to your inbox!..</b></p>
+        <br>
+        <br>
+        <button class="w"> write a  message</button>
+   
+      </div>
+    </div>
+    <div id="rani" class="feed">
+        <div class="lists">
+            <h1> lists.....</h1>
+            <p> DeepikaBotcha</p>
+            <br>
+            <br>
+            <h2><b>pinned Lists</b></h2>
+            <p>Nothing to see here yet — pin your favorite Lists to access them quickly</p>
+            <hr>
+            <h2><b>Dicsover new lists</b></h2>
+        </div>
+      </div>
+  </div>
+  
+</div>
+    
+</div>
+    <div class="widgets">
+      <div class="widgets__input">
+        <span class="material-icons widgets__searchIcon"> search </span>
+        <input type="text" placeholder="Search Twitter"/>
+      </div>
+
+      <div class="widgets__widgetContainer">
+        <h2>What's happening?</h2>
+        <br>
+        <br>
+       <div class="section">
+          <p lang="en" dir="ltr"></p>
+          <div class="post__avatar">
+            <img
+              src="https://pbs.twimg.com/semantic_core_img/1559078151501725697/nTLgduHJ?format=jpg&name=120x120"
+              alt="image"/>
+          
+          </div>
+            <h4>Entertainment.LIVE</h4>
+            <p><b>Fans wish Atlee a happy birthday 🎂</b></p>
+            <p> trending with <a href="https://twitter.com/search?q=%23Varisu&src=trend_click&vertical=trends">#varsu</a> ,, <a href="https://twitter.com/search?q=%23Mersal&src=trend_click&vertical=trends">#mersal</a></p>
+            </div>
+
+        </section>
+        <br>
+        
+        <div class="section">
+          <p lang="en" dir="ltr"></p>
+          <div class="post__avatar">
+            <img
+              src="https://pbs.twimg.com/semantic_core_img/1572222500121067524/v0sRrQkQ?format=png&name=120x120"
+              alt="image"/>
+          
+          </div>
+            <h4>Entertainment.Last night</h4>
+            <p> <b>Gujarati film Chhello Show selected as India's official entry to Oscars 2023</b></p>
+            <p> Trending with <a href="https://twitter.com/search?q=Oscars&src=trend_click&vertical=trends">oscars</a></p>
+          
+            </div>
+            
+            <br>
+
+        </section>
+        <div class="section">
+          <p lang="en" dir="ltr"></p>
+          <div class="post__avatar">
+            <img
+              src="https://static.remove.bg/remove-bg-web/c4b29bf4b97131238fda6316e24c9b3606c18000/assets/start_remove-c851bdf8d3127a24e2d137a55b1b427378cd17385b01aec6e59d5d4b5f39d2ec.png"
+              alt="image"/>
+          
+          </div>
+            <h4>Cricket.LIVE</h4>
+            <p> INDvAUS: India take on Australia in the first T20I match</p>
+            </div>
+
+        </section>
+        <br>
+        <div class="section">
+          <p lang="en" dir="ltr"></p>
+          <a href="https://twitter.com/explore/tabs/for-you"> show more</a>
+        
+
+        </div>
+    </div>
+    <div>
+      <div class="section">
+        <p lang ="en" dir="ltr"></p>
+        <div class="post__avatar">
+          <img
+            src="https://static.remove.bg/remove-bg-web/c4b29bf4b97131238fda6316e24c9b3606c18000/assets/start_remove-c851bdf8d3127a24e2d137a55b1b427378cd17385b01aec6e59d5d4b5f39d2ec.png"
+            alt="image"/>
+        </div>
+        <h4> ICIC@icc</h4>
+        <button id="v"> follow</button>
+      </section>
+      </div>
+    <script>
+      
+      var modal = document.getElementById("myModal");
+
+
+var btn = document.getElementById("myBtn");
+
+
+var span = document.getElementsByClassName("close")[0];
+
+
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+
+function me(){
+  document.getElementById("demo").innerHTML=document.getElementById("")
+}
+
+function me (){
+  document.getElementById("demo").innerHTML=document.getElementById("")
+}
+
+
+
+ 
+
+
+function me(){
+  document.getElementById("demo").innerHTML=document.getElementById("dem").innerHTML;
+}
+
+function you(){
+  document.getElementById("demo").innerHTML=document.getElementById("deep").innerHTML;
+}
+function math(){
+  document.getElementById("demo").innerHTML=document.getElementById("jaya").innerHTML;
+}
+function random(){
+  document.getElementById("demo").innerHTML=document.getElementById("mav").innerHTML;
+}
+function yaha(){
+  document.getElementById("demo").innerHTML=document.getElementById("mani").innerHTML;
+}
+function oh(){
+    document.getElementById("demo").innerHTML=document.getElementById("rani").innerHTML;
+}
+
+
+var modal2 = document.getElementById("myModal2");
+
+
+var btn = document.getElementById("myBtn2");
+
+
+var span = document.getElementsByClassName("close2")[0];
+
+
+btn.onclick = function() {
+  modal2.style.display = "block";
+}
+
+
+span.onclick = function() {
+  modal2.style.display = "none";
+}
+
+
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+  
+</script>
+
+  
+        
+
+
+  </body>
+</html>
